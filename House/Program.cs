@@ -13,11 +13,10 @@ namespace House
     {
         static void Main()
         {
-            House building_1 = new House("Здание №1", 10, 4, "Красный", "Кирпич");
+            House building_1 = new House("Здание №1", "Красный", "Кирпич");
             building_1.Show();
-            building_1.SetFlatSquare(10, 50.7);
-            building_1.GetFlatSquare(10);
-            building_1.WhichFloor(10);
+            building_1.MakeFloor(2);
+
             
 
             Console.ReadKey();
