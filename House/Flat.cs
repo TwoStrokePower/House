@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace House
 {
-    internal class Flat : Floor
+    class Flat 
     {
 
     }

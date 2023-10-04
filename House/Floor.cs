@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace House
 {
-    class Floor : House
+    class Floor
     {
-        private Flat[] flats;
         public Floor() { }
 
         public void AddFlat(int numberFloor)
