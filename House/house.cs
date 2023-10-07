@@ -39,11 +39,18 @@ namespace House
             floors.Add(number, floor);
         }
 
-        public void MakeFlatOnFloor(int number)
+        public void MakeFlatOnFloor(int numberFloor, int numberFlat )
         {
-            
+            floors[numberFloor].AddFlat(numberFlat);
         }
 
+        public void ShowFlatsOnFloor(int numberFloor)
+        {
+            //flats = floors[numberFloor];
+            //foreach (var flats in floors[numberFloor].)
+            floors[numberFloor].ShowFlats();
+        }
+        
         public void Show()
         {
             Console.WriteLine(address);
