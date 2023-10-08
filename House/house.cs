@@ -51,6 +51,16 @@ namespace House
             floors[numberFloor].ShowFlats();
         }
         
+        public void GetFloors()
+        {
+            var sortedFloors = from entry in floors orderby entry.Key ascending select entry;
+            foreach (var item in floors)
+            {
+                Console.WriteLine($"Этаж №{item.Key}");
+            }
+
+        }
+
         public void Show()
         {
             Console.WriteLine(address);

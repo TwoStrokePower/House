@@ -19,6 +19,8 @@ namespace House
             building_1.MakeFlatOnFloor(2, 10);
             building_1.MakeFlatOnFloor(2, 11);
             building_1.ShowFlatsOnFloor(2);
+            building_1.MakeFloor(3);
+            building_1.GetFloors();
 
 
 
