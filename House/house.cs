@@ -44,6 +44,10 @@ namespace House
             floors[numberFloor].AddFlat(numberFlat, typeRoom);
         }
 
+        public void GetTypeFlat(uint numberFloor, uint numberFlat)
+        {
+            floors[numberFloor].GetTypeFlat(numberFlat);
+        }
         public void ShowFlatsOnFloor(uint numberFloor)
         {
             //flats = floors[numberFloor];

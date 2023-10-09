@@ -26,5 +26,10 @@ namespace House
                 Console.WriteLine($"Квартира №{item.Key}");
             }
         }
+
+        public void GetTypeFlat(uint numberFlat)
+        {
+            flats[numberFlat].GetTypeRoom();
+        }
     }
 }

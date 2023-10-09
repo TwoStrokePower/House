@@ -24,9 +24,9 @@ namespace House
             }
         }
 
-        public void GetTypeRoom()
+        public object GetTypeRoom()
         {
-            
+            return type;
         }
     }
 }
