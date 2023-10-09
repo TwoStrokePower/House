@@ -8,14 +8,15 @@ namespace House
 {
     class Floor
     {
-        private Dictionary<int, Flat> flats = new Dictionary<int, Flat>();
+        private Dictionary<uint, Flat> flats = new Dictionary<uint, Flat>();
 
         public Floor() { }
 
-        public void AddFlat(int numberFloor)
+        public void AddFlat(uint numberFlat, string typeRoom)
         {
             Flat flat = new Flat();
-            flats[numberFloor] = flat;
+            flats[numberFlat] = flat;
+            flats[numberFlat].SetTypeRoom(typeRoom);
         }
 
         public void ShowFlats() 

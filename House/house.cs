@@ -11,7 +11,7 @@ namespace House
         private string address;
         private string material;
         private string color;
-        private  Dictionary<int, Floor> floors = new Dictionary<int, Floor>();
+        private  Dictionary<uint, Floor> floors = new Dictionary<uint, Floor>();
         public House()
         {
 
@@ -33,18 +33,18 @@ namespace House
             get { return color; }
         }
 
-        public void MakeFloor(int number)
+        public void MakeFloor(uint number)
         {
              Floor floor = new Floor();
             floors.Add(number, floor);
         }
 
-        public void MakeFlatOnFloor(int numberFloor, int numberFlat )
+        public void MakeFlatOnFloor(uint numberFloor, uint numberFlat, string typeRoom )
         {
-            floors[numberFloor].AddFlat(numberFlat);
+            floors[numberFloor].AddFlat(numberFlat, typeRoom);
         }
 
-        public void ShowFlatsOnFloor(int numberFloor)
+        public void ShowFlatsOnFloor(uint numberFloor)
         {
             //flats = floors[numberFloor];
             //foreach (var flats in floors[numberFloor].)

@@ -46,6 +46,10 @@
     <Compile Include="Flat.cs" />
     <Compile Include="Floor.cs" />
     <Compile Include="house.cs" />
+    <Compile Include="IRoom\FlatRoom.cs" />
+    <Compile Include="IRoom\IRoom.cs" />
+    <Compile Include="IRoom\StudioRoom.cs" />
+    <Compile Include="IRoom\WorkRoom.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
