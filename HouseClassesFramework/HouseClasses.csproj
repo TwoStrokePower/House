@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{90BA00FD-BDB3-4101-AF6B-0E64E84BE3AC}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>House</RootNamespace>
-    <AssemblyName>House</AssemblyName>
+    <ProjectGuid>{4A0054B3-CF2D-47E4-A9F8-87F6E137B3C6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HouseClassesFramework</RootNamespace>
+    <AssemblyName>HouseClassesFramework</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,18 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Flat.cs" />
-    <Compile Include="Floor.cs" />
-    <Compile Include="house.cs" />
-    <Compile Include="IRoom\FlatRoom.cs" />
-    <Compile Include="IRoom\IRoom.cs" />
-    <Compile Include="IRoom\StudioRoom.cs" />
-    <Compile Include="IRoom\WorkRoom.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="FloorInfo\Floor.cs" />
+    <Compile Include="FloorInfo\RoomInfo\FlatRoom.cs" />
+    <Compile Include="FloorInfo\RoomInfo\IRoom.cs" />
+    <Compile Include="FloorInfo\RoomInfo\StudioRoom.cs" />
+    <Compile Include="FloorInfo\RoomInfo\TechRoom.cs" />
+    <Compile Include="House.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
