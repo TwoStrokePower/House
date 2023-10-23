@@ -5,10 +5,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{90BA00FD-BDB3-4101-AF6B-0E64E84BE3AC}</ProjectGuid>
+    <ProjectGuid>{E8E630A8-B8D7-407D-A574-9B30605EDFDD}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>House</RootNamespace>
-    <AssemblyName>House</AssemblyName>
+    <RootNamespace>Db</RootNamespace>
+    <AssemblyName>Db</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -54,7 +54,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HouseContext.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -62,16 +61,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Db\Db.csproj">
-      <Project>{e8e630a8-b8d7-407d-a574-9b30605edfdd}</Project>
-      <Name>Db</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\HouseBuilder\HouseBuilder.csproj">
-      <Project>{0f597df9-e6d1-4abb-87ab-135242a242b3}</Project>
-      <Name>HouseBuilder</Name>
-    </ProjectReference>
     <ProjectReference Include="..\HouseClassesFramework\HouseClasses.csproj">
-      <Project>{4a0054b3-cf2d-47e4-a9f8-87f6e137b3c6}</Project>
+      <Project>{4A0054B3-CF2D-47E4-A9F8-87F6E137B3C6}</Project>
       <Name>HouseClasses</Name>
     </ProjectReference>
   </ItemGroup>
