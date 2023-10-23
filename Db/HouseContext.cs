@@ -9,22 +9,19 @@ using System.Threading.Tasks;
 
 namespace Db
 {
-   
-    
-        public class HouseContext : DbContext
-        {
-            public HouseContext()
-                : base("DbConnection")
-            { }
-            public DbSet<House> Houses { get; set; }
+
+
+    public class HouseContext : DbContext
+    {
+        public HouseContext()
+            : base("DbConnection")
+        { }
+        public DbSet<House> Houses => Set<House>();
 
         public void Save()
         {
-            SaveChanges();
+            this.SaveChanges();
         }
-       
-        }
-
-        
     }
+}
 

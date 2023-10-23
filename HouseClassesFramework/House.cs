@@ -1,11 +1,16 @@
 ﻿using HouseClasses.FloorInfo;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace HouseClasses
 {
+    [Table("HousesList")]
     public class House
     {
+        [Key]
+        public long Id { get; set; }
         public string Address { get; set; } = "";
         public Dictionary<int, Floor> Floors { get; set; } = new Dictionary<int, Floor>();
 
