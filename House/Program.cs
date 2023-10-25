@@ -17,12 +17,13 @@ namespace House
                 Console.WriteLine(house.GetFullInfo());
             }
 
-            //var newHouse = HouseBuilderClass.GenerateNewHouse("Здание № 1");
-            //newHouse.AddNewFloor(-1);
-            //newHouse.Floors[-1].AddNewRoom(001, "flatroom");
-            //Console.WriteLine(newHouse.GetFullInfo());
-            //db.Houses.Add(newHouse);
-            //db.Save();
+            var newHouse = HouseBuilderClass.GenerateNewHouse("Здание № 1");
+            newHouse.AddNewFloor(-1);
+            newHouse.Floors[-1].AddNewRoom(001, "flatroom");
+            Console.WriteLine(newHouse.GetFullInfo());
+            db.Houses.Add(newHouse);
+            db.Save();
+            Console.WriteLine("Объект сохранен");
 
             Console.ReadKey();
 
