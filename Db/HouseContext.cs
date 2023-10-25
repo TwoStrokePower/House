@@ -20,7 +20,7 @@ namespace Db
 
         public void Save()
         {
-            SaveChanges();
+            this.SaveChanges();
         }
        
         }
