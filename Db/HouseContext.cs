@@ -16,7 +16,7 @@ namespace Db
             public HouseContext()
                 : base("DbConnection")
             { }
-            public DbSet<House> Houses { get; set; }
+            public DbSet<House> Houses => Set<House>();
 
         public void Save()
         {
